@@ -1,0 +1,25 @@
+doctype html
+html
+	head
+		title test
+		link(rel='stylesheet' href='styles/main.css')
+	body
+		section.page
+			.news
+				- for (var i = 0; i < 5; i++)
+					.news__unit
+						a(href='#').news__wrap
+							picture.news__img
+								img(src='./images/icoalert.png' alt='')
+							.news__description
+								!= i
+							.news__data
+								span 12.11.2017
+					.news__unit
+						a(href='#').news__wrap
+							picture.news__img
+								img(src='./images/icoalert.png' alt='')
+							.news__description
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi molestiae, sed veritatis, nesciunt delectus aspernatur quaerat quisquam tempore corrupti ratione aliquid libero laborum quibusdam reprehenderit quam non laudantium magni asperiores.
+							.news__data
+								span 12.11.2017
